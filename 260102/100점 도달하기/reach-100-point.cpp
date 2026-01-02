@@ -5,17 +5,17 @@ int main() {
     int score;
     std::cin >> score;
 
-    for (score; score <= 100; score++) {
-        if (score >= 90) {
+    for (int i = score; i <= 100; i++) {
+        if (i >= 90) {
             std::cout << "A";
         }
-        else if (score >= 80) {
+        else if (i >= 80) {
             std::cout << "B";
         }
-        else if (score >= 70) {
+        else if (i >= 70) {
             std::cout << "C";
         }
-        else if (score >= 60) {
+        else if (i >= 60) {
             std::cout << "D";
         }
         else {
