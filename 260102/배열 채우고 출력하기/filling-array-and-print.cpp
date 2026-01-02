@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    char array[10];
+
+    for (int i = 0; i < 10; i++) {
+        std::cin >> array[i];
+    }
+
+    for (int i = 9; i >= 0; i--) {
+        std::cout << array[i];
+    }
+
+    return 0;
+}
