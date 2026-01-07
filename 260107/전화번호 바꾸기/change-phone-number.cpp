@@ -1,5 +1,4 @@
 #include <iostream>
-#include <string>
 using namespace std;
 
 int main() {
@@ -7,7 +6,7 @@ int main() {
     char h;
     std::cin >> a >> h >> b >> h >> c;
 
-    std::cout << 0 << a << h << c << h << b;
+    std::cout << "010-" << c << h << b;
 
     return 0;
 }
