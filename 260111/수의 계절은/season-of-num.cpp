@@ -5,14 +5,14 @@ int main() {
     int M;
     std::cin >> M;
 
-    if ((M>=3) && (M<=5))
-        std::cout << "Spring";
-    else if ((M>=6) && (M<=8))
-        std::cout << "Summer";
-    else if ((M>=9) && (M<=11))
-        std::cout << "Fall";
-    else
+    if (M>=12 || M<=2)
         std::cout << "Winter";
+    else if (M>=8)
+        std::cout << "Fall";
+    else if (M>=5)
+        std::cout << "Summer";
+    else
+        std::cout << "Spring";
     
     return 0;
 }
