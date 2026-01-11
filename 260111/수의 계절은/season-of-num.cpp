@@ -7,12 +7,12 @@ int main() {
 
     if (M>=12 || M<=2)
         std::cout << "Winter";
-    else if (M>=8)
-        std::cout << "Fall";
-    else if (M>=5)
+    else if (M<=5)
+        std::cout << "Spring";
+    else if (M<=8)
         std::cout << "Summer";
     else
-        std::cout << "Spring";
+        std::cout << "Fall";
     
     return 0;
 }
