@@ -5,7 +5,10 @@ int main() {
     int a;
     std::cin >> a;
 
-    std::cout << (((a>=10) && (a<=20)) ? "yes" : "no");
+    if ((a>=10) && (a<=20))
+        std::cout << "yes";
+    else
+        std::cout << "no";
 
     return 0;
 }
