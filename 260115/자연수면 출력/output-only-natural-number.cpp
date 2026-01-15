@@ -5,7 +5,7 @@ int main() {
     int A, B;
     std::cin >> A >> B;
 
-    if (A>=0) {
+    if (A>0) {
         for (int i=0; i<B; i++) {
             std::cout << A;
         }
