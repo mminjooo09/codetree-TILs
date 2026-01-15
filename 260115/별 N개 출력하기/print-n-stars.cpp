@@ -6,7 +6,7 @@ int main() {
     int cnt = 1;
     std::cin >> N;
 
-    while (cnt<=5) {
+    while (cnt<=N) {
         std::cout << "*" << endl;
         cnt++;
     }
