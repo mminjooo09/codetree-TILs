@@ -2,24 +2,22 @@
 using namespace std;
 
 int main() {
-    char a[3];
-    int b[3];
-    int cnt = 0;
-    
-    for (int i=0; i<3; i++) {
-        std::cin >> a[i] >> b[i];
-    }
+    char a1, a2, a3;
+    int b1, b2, b3;
+    std::cin >> a1 >> b1 >> a2 >> b2 >> a3 >> b3;
 
-    for (int i=0; i<3; i++) {
-        if (a[i]=='Y' && b[i]>=37)
-            cnt++;
+    if (a1=='Y' && b1 >= 37) {
+        if ((a2=='Y' && b2 >= 37) || (a3=='Y' && b3 >= 37))
+            std::cout << 'E';
+        else
+            std::cout << 'N';
     }
-
-    if (cnt >= 2) {
-        std::cout << 'E';
+    else {
+        if ((a2=='Y' && b2 >= 37) && (a3=='Y' && b3 >= 37))
+            std::cout << 'E';
+        else
+            std::cout << 'N';
     }
-    else
-        std::cout << 'N';
 
     return 0;
 }
