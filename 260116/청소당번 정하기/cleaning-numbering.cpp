@@ -6,10 +6,8 @@ int main() {
     int cnt2=0, cnt3=0, cnt12=0;
     std::cin >> n;
 
-    for (int i=1; i<n; i++) {
-        if ((i%2==0) && (i%3==0) && (i%12==0))
-            cnt12++;
-        else if (i%12==0)
+    for (int i=1; i<=n; i++) {
+        if (i%12==0)
             cnt12++;
         else if (i%3==0)
             cnt3++;
