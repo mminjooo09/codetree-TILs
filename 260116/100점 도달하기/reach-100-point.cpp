@@ -8,12 +8,17 @@ int main() {
     while (N<=100) {
         if (N>=90)
             std::cout << "A ";
-        if (N>=90)
-            std::cout << "A ";
-        if (N>=90)
-            std::cout << "A ";
-        if (N>=90)
-            std::cout << "A ";
+        else if (N>=80)
+            std::cout << "B ";
+        else if (N>=70)
+            std::cout << "C ";
+        else if (N>=60)
+            std::cout << "D ";
+        else
+            std::cout << "F ";
+        
+        N++;
     }
+
     return 0;
 }
