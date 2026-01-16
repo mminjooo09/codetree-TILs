@@ -7,7 +7,11 @@ int main() {
     std::cin >> N;
 
     while (i <= N) {
-        if ((i%10==3) || (i%10==6) || (i%10==9) || (i%3==0))
+        if (i%3==0)
+            std::cout << 0 << " ";
+        else if ((i%10==3) || (i%10==6) || (i%10==9))
+            std::cout << 0 << " ";
+        else if ((i/10==3) || (i/10==6) || (i/10==9))
             std::cout << 0 << " ";
         else
             std::cout << i << " ";
