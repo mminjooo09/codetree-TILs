@@ -6,7 +6,7 @@ int main() {
     int M = 0;
     std::cin >> N;
 
-    for (int i=1; i<=100; i++) {
+    for (int i=1; i<=101; i++) {
         if (M<N)
            M += i;
         else {
