@@ -12,7 +12,7 @@ int main() {
             }
         }
         else {
-            for (int j=1; j<=(2*N-i)/2+1; j++) {
+            for (int j=1; j<=N-(i/2); j++) {
                 std::cout << "* ";
             }
         }
