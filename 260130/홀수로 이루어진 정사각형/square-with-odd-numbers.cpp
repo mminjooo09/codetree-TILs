@@ -5,9 +5,9 @@ int main() {
     int N;
     std::cin >> N;
 
-    for (int i=10; i<=((2*N-1)+10); i+=2) {
-        for (int j=1; j<=N; j++) {
-            std::cout << i+(2*j-1) << " ";
+    for (int i=1; i<=N; i++) {
+        for (int j=0; j<N; j++) {
+            std::cout << 10 + (2*i-1) + (2*j) << " ";
         }
         std::cout << endl;
     }
