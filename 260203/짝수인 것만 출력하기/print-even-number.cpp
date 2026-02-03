@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int N;
+    std::cin >> N;
+    int arr[N];
+    int even[N];    
+
+    for (int i=0; i<N; i++) {
+        std::cin >> arr[i];
+
+        if (arr[i]%2==0) {
+            even[i] = arr[i];
+            std::cout << even[i] << " ";
+        }
+    }
+
+    return 0;
+}
