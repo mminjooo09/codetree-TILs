@@ -2,8 +2,7 @@
 using namespace std;
 
 int main() {
-    int gap=-1, cnt=0;
-
+    int success = false;
     // 원소 입력
     int N1, N2;
     std::cin >> N1 >> N2;
@@ -16,27 +15,24 @@ int main() {
         std::cin >> B[j];
 
     // 시작점 차이 계산
-    for (int i=0; i<N1; i++) {
-        if (A[i]==B[0]) {
-            gap=i;
-            break;
-        }
-    }
+    for (int i=0; i<=N1-N2; i++) {
+        int cnt=0;
 
-    if (gap==-1)
-        std::cout << "No";
-    else {
         for (int j=0; j<N2; j++) {
-            if (B[j]==A[j+gap]) {
+            if (A[i+j] == B[j])
                 cnt++;
-            }
+            else
+                break;
         }
 
-        if (cnt == N2)
-            std::cout << "Yes";
-        else
-            std::cout << "No";
+        if (cnt==N2)
+            success = true;
     }
+
+    if (success)
+        std::cout << "Yes";
+    else
+        std::cout << "No";
 
     return 0;
 }
