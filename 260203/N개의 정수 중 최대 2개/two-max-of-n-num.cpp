@@ -19,17 +19,14 @@ int main() {
     }
 
     int max2=INT_MIN;
+    arr[idx] = INT_MIN;
     for (int i=0; i<N; i++) {
-        arr[idx] = {0};
-
         if (arr[i] >= max2) {
             max2 = arr[i];
-            idx=i;
         }
     }
 
     std::cout << max1 << " " << max2;
-
 
     return 0;
 }
