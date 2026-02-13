@@ -15,7 +15,7 @@ int main() {
     }
 
     int max = -1;
-    for (int i=0; i<N; i++) {
+    for (int i=0; i<1001; i++) {
         if (cnt[i]==1 && i>max)
             max = i;
     }
