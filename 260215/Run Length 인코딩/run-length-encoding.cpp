@@ -6,22 +6,27 @@ int main() {
     string A;
     std::cin >> A;
 
-    string B;
-    int A_cnt = 1;
-    for (int i=0; i<A.length(); i++) {
-        if (A[i] == A[i+1]) {
-            A_cnt++;
+    string B = "";
+
+    char curr = A[0];
+    int num = 1;
+    for (int i=1; i<A.length(); i++) {
+        if (A[i] == curr) {
+            num++;
         }
         else {
-            B += A[i];
-            B += to_string(A_cnt);
-            A_cnt = 1;
+            B += curr;
+            B += to_string(num);
+            curr = A[i];
+            num = 1;
         }
     }
 
+    B += curr;
+    B += to_string(num);
+
     std::cout << B.length() << endl;
-    for (int i=0; i<B.length(); i++)
-        std::cout << B[i];
+    std::cout << B;
 
     return 0;
 }
