@@ -9,8 +9,8 @@ int main() {
     int input[n];
     string output;
     for (int i=0; i<n; i++) {
-        std::cin >> input[n];
-        output += to_string(input[n]);
+        std::cin >> input[i];
+        output += to_string(input[i]);
     }
 
     int outlen = output.length();
