@@ -6,24 +6,19 @@ int main() {
     string S;
     std::cin >> S;
 
-    int S_len = S.length();
-    int s = S.length();
-    for (int i=0; i<S_len; i++) {
-        int n;
-        std::cin >> n;
+    int len = S.length();
 
-        if (s>0 && n<s) {     // 5>0, 3<5   // 4>0 2<4  // 3>0 0<4  // 
-            S = S.erase(n, 1); // helo      // heo      // eo
-            s = S.length();    // 4         // 3        // 2
-            std::cout << S << endl;
-        }
-        else if (n>=s) {
-            S = S.erase(s-1, 1);
-            s = S.length();
-            std::cout << S << endl;
-        }
-        else if (s == 1)
-            break;
+    while (len > 1) {
+        int a;
+        std::cin >> a;
+
+        if (a >= len)
+            a = len-1;
+        
+        S.erase(a, 1);
+        len--;
+
+        std::cout << S << endl;
     }
 
     return 0;
