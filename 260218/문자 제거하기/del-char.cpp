@@ -19,9 +19,11 @@ int main() {
         }
         else if (n>=s) {
             S = S.erase(s-1, 1);
+            s = S.length();
             std::cout << S << endl;
-            break;
         }
+        else if (s == 1)
+            break;
     }
 
     return 0;
