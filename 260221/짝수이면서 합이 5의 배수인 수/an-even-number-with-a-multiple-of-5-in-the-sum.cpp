@@ -3,11 +3,7 @@
 using namespace std;
 
 bool MagicNumber(int n) {
-    string s = to_string(n);
-    if (n%2==0 && ((s[0]-'0'+s[1]-'0')%5==0))
-        return true;
-    else
-        return false;
+    return n%2==0 && ((n/10)+(n%10))%5==0;
 }
 
 int main() {
