@@ -1,21 +1,14 @@
 #include <iostream>
 using namespace std;
 
-int cnt = 0;
-
 int F(int n) {
     if (n==1)
-        return cnt;
+        return 0;
 
-    if (n%2==0) {
-        cnt++;
-        return F(n/=2);
-    }
-    else {
-        cnt++;
-        return F(n/=3);
-    }
-
+    if (n%2==0)
+        return F(n/=2) + 1;
+    else
+        return F(n/=3) + 1;
 }
 
 int main() {
